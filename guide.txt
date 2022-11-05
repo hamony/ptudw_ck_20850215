@@ -1,0 +1,14 @@
+# init package 
+npm init
+
+# install dependency packages
+pnpm install express express-handlebars pg pg-hstore sequelize sequelize-cli
+
+# Create database base on config file
+sequelize db:create
+
+# Run all migrations in migrations folder
+sequelize db:migrate
+
+# Run all seeders
+sequelize db:seed:all
